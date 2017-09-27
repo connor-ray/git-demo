@@ -1,9 +1,7 @@
 # Git Worflow
 This document describes a universal git workflow that should be used when contributing to projects on GitHub. It assumes a very basic understanding of git (commits, branches, etc.) using the command line.
 
-Note: This workflow is designed to fit a wide variety of projects. The workflow for private repositories may be slightly different, in particular, the repository's team may prefer for you to not fork the repo but rather push branches to it directly.
-
-## Cloning and forking the repository
+## Cloning the repository
 
 **Note: The steps in this section only need to be performed ONCE per repository.**
 
@@ -13,8 +11,10 @@ Note: This workflow is designed to fit a wide variety of projects. The workflow 
    <code>git clone <i>clone-url</i></code>
 
    at the terminal. Replace *`clone-url`* with the url that has been copied to
-   your clipboard. For cray9503/git-demo, it will be
-   `https://github.com/cray9503/git-demo.git`.
+   your clipboard. For Firetoss-Agency/git-demo, it will be
+   `https://github.com/Firetoss-Agency/git-demo.git`.
+   
+   ![step-1.png](step-1.png)
 
 
 Remember, the above step only needs to be performed once per
@@ -31,7 +31,7 @@ Or see [this guide](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZS
 
 It is important that you never commit to master because master will be the
 branch that you pull upstream changes from (e.g., changes from
-cray9503/git-demo).
+Firetoss-Agency/git-demo).
 
 1. **Update master.** Before you make any changes, first checkout master
 
@@ -86,13 +86,17 @@ cray9503/git-demo).
    (replace *`branch-name`* with the name of the branch).
    
 5. **Make a pull request.** If you then go to the repo on GitHub, you should
-   see a button to create a pull request from your branch. It will look
+   see a button <font color="blue">①</font> to create a pull request from your branch. It will look
    something like this:
    
-   If you do not see this, select the **<i>New pull request</i>** button.
+   ![step-2.png](step-2.png)
+   
+   If you do not see this, select the **<i>New pull request</i>** button <font color="blue">②</font>.
    Once doing this, you will be presented with a page. This page will show you the diff of the changes. Double check them to      make sure you are making a pull request against the right branch.
+   
+   ![pr.png](pr.png)
 
-   Things to check here are that the branch for the upstream repo (cray9503) is master, and that the branch you are comparing    is the branch you wish to make the pull request from.
+   Things to check here are that the branch for the upstream repo (Firetoss-Agency) is master, and that the branch you are comparing is the branch you wish to make the pull request from.
    
    Once you are done, click the **<i>Create pull request</i>** button.
    
