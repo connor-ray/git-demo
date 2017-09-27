@@ -1,1 +1,5 @@
-Here is a change you sonofabitch. You'll probly just abandon me. 
+<<<<<<< HEAD
+conflict
+=======
+## This is the test file
+>>>>>>> master
